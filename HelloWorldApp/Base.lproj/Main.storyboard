@@ -18,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzW-aB-BE7">
-                                <rect key="frame" x="97" y="158" width="220" height="33"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                <rect key="frame" x="74" y="158" width="266.5" height="40"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="34"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,6 +33,9 @@
                                 <state key="normal" title="Show Text">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHH-WQ-Inr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +47,10 @@
                             <constraint firstItem="fVV-Ma-JRV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vNw-9J-iHg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="IzW-aB-BE7" id="Ekj-2x-Dal"/>
+                        <outlet property="startButton" destination="fVV-Ma-JRV" id="Lmg-cd-oLl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
